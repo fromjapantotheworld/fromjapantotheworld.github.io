@@ -7943,14 +7943,25 @@ h1, h2, h3, h4, h5,
         background: transparent;
         display: none; } }
 
-iframe {
-  height: 800px;}
-  @media (max-width: 767.98px) {
+
+.artists{
+  margin-top:600px;
+}
+
+iframe{
+  margin-top:200px; 
+  border-style: solid;
+  border-width: 5px 0 5px 0;
+}
+
+@media (max-width: 767.98px) {
     iframe {
       height: 300px;
       margin-top:-100px !important;
     }
-  }
+    .artists{
+      margin-top:0px;
+    }
 }
 
 .form-control {

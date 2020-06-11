@@ -4,7 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -7301,10 +7301,12 @@ h1, h2, h3, h4, h5,
 .ftco-navbar-light {
   background: transparent !important;
   position: absolute;
+  float: right;
   left: 0;
   right: 0;
   z-index: 3;
-  top: 30px; }
+  top: 30px;
+  margin-top: 10px; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
       top: 0;
@@ -7558,17 +7560,19 @@ h1, h2, h3, h4, h5,
         color: #fff; }
   .btn.btn-outline-white {
     border-color: rgba(255, 255, 255, 0.8);
-    background: none;
+
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     border-radius: 30px;
     border-width: 2px;
-    color: #fff; }
-    .btn.btn-outline-white:hover, .btn.btn-outline-white:focus, .btn.btn-outline-white:active {
-      background: #fff;
+    background: #fff;
       border-color: #fff;
       color: #ee76ad; }
+    .btn.btn-outline-white:hover, .btn.btn-outline-white:focus, .btn.btn-outline-white:active {
+      background: #ee76ad;
+    color: #fff;
+    border-color: #fff; }
 
 .ftco-section-featured {
   margin-top: -380px;
@@ -7945,20 +7949,18 @@ h1, h2, h3, h4, h5,
 
 
 .artists{
-  margin-top:600px;
+  margin-top:320px;
 }
 
-iframe{
-  margin-top:200px; 
-  border-style: solid;
-  border-width: 5px 0 5px 0;
+@media (max-width: 1199.98px) {
+ 
+  .artists{
+    margin-top:200px;
+  }
 }
 
 @media (max-width: 767.98px) {
-    iframe {
-      height: 300px;
-      margin-top:-100px !important;
-    }
+ 
     .artists{
       margin-top:0px;
     }
